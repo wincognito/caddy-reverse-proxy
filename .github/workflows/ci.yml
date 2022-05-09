@@ -67,7 +67,6 @@ jobs:
         prerelease: true
         release_name: ${{ steps.versioning.outputs.version }}
         tag_name: ${{ github.ref }}
-        body_path: CHANGELOG.md
 
 
     - name: Create release
@@ -80,4 +79,3 @@ jobs:
         prerelease: false
         release_name: ${{ steps.versioning.outputs.version }}
         tag_name: ${{ github.ref }}
-        body_path: CHANGELOG.md
