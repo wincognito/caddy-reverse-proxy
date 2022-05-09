@@ -9,6 +9,10 @@ env:
   DOCKER_USERNAME: wincognito
   REPO: wincognito/caddy-reverse-proxy
 
+permissions:
+  contents: write
+
+
 jobs:
 
   build:
