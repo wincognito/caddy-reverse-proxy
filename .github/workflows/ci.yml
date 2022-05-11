@@ -35,11 +35,9 @@ jobs:
       with:
         apt-get: buildah podman
 
-    - name: Display the path
-      run: "echo 'Sciezka: $(pwd)'"
+
+    - name: Run script
+      run: ./publish.sh
       shell: bash
 
-    - name: List dir
-      run: ls
-      shell: bash
 
